@@ -124,7 +124,7 @@ public class ProxyPool {
                 logger.debug("proxy pool filled. curSize:{}", this.proxyList.size());
             }
         } catch (APIException e) {
-            e.printStackTrace();
+            logger.error("proxy get error.", e);
         }
     }
 }
